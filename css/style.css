@@ -1,0 +1,116 @@
+/* ====== HEADER ====== */
+header {
+  background-color: #3e2f1c;
+  color: #fff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  width: 140px; /* tamaño equilibrado */
+  height: auto;
+}
+
+.logo h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.logo p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #f4c542;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #f4c542;
+}
+
+/* ====== HERO ====== */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url('../img/hero_cafetal.png') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  z-index: 0;
+}
+
+.hero h2,
+.hero p,
+.hero a {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.hero a {
+  display: inline-block;
+  background-color: #f4c542;
+  color: #3e2f1c;
+  padding: 14px 30px;
+  margin: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.hero a:hover {
+  background-color: #fff;
+  color: #3e2f1c;
+  transform: scale(1.05);
+}

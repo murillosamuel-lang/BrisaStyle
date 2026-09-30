@@ -35,81 +35,114 @@
     <a href="#destacados">Ofertas especiales</a>
   </section>
 
-  <!-- Colección -->
-  <section id="coleccion">
-    <h3>Colección BrisaStyle</h3>
-    <div class="productos">
-      <article class="producto">
-        <h4>Sombrero Cafetero Clásico</h4>
-        <p>Inspirado en el paisaje cultural cafetero.</p>
-        <span>$120.000</span>
-        <button>Agregar al carrito</button>
-      </article>
+  <section id="coleccion" class="coleccion">
+  <h3>Colección BrisaStyle</h3>
 
-      <article class="producto">
-        <h4>Sombrero Aguadeño Premium</h4>
-        <p>Tejido a mano con materiales de alta calidad.</p>
-        <span>$150.000</span>
-        <button>Agregar al carrito</button>
-      </article>
+  <div class="productos-grid">
 
-      <article class="producto">
-        <h4>Sombrero Artesanal Quindiano</h4>
-        <p>Detalles únicos hechos por artesanos locales.</p>
-        <span>$135.000</span>
-        <button>Agregar al carrito</button>
-      </article>
-    </div>
-  </section>
+    <article class="producto">
+      <img src="img/Aguadeno_extrafino.webp" alt="sombrero Aguadeño Premium">
+      <h4>Aguadeño Extrafino</h4>
+      <p>Tejido a mano con materiales de alta calidad.</p>
+      <span class="precio">$180.000</span>
+      <button>Agregar al carrito</button>
+    </article>
 
-  <!-- Destacados -->
-  <section id="destacados">
-    <h3>Destacados de la semana</h3>
-    <div class="destacados-grid">
-      <article class="producto-destacado">
+    <article class="producto">
+      <img src="img/sombrero2.jpg" alt="Sombrero Aguadeño Premium">
+      <h4>Sombrero Aguadeño Premium</h4>
+      <p>Tejido a mano con materiales de alta calidad.</p>
+      <span class="precio">$150.000</span>
+      <button>Agregar al carrito</button>
+    </article>
+
+    <article class="producto">
+      <img src="img/sombrero3.jpg" alt="Sombrero Artesanal Quindiano">
+      <h4>Sombrero Artesanal Quindiano</h4>
+      <p>Detalles únicos hechos por artesanos locales.</p>
+      <span class="precio">$135.000</span>
+      <button>Agregar al carrito</button>
+    </article>
+
+  </div>
+</section>
+
+<section id="destacados" class="destacados">
+  <h3>Destacados de la Semana</h3>
+
+  <div class="destacados-grid">
+
+    <article class="destacado">
+      <img src="img/destacado1.jpg" alt="Combo Sombrero + Faja Artesanal">
+      <div class="info">
         <h4>Combo Sombrero + Faja Artesanal</h4>
-        <span>Oferta limitada</span>
+        <p>Oferta limitada por temporada.</p>
+        <span class="precio">$180.000</span>
         <button>Comprar ahora</button>
-      </article>
+      </div>
+    </article>
 
-      <article class="producto-destacado">
-        <h4>Edición especial Eje Cafetero</h4>
-        <span>Stock reducido</span>
+    <article class="destacado">
+      <img src="img/destacado2.jpg" alt="Edición Especial Eje Cafetero">
+      <div class="info">
+        <h4>Edición Especial Eje Cafetero</h4>
+        <p>Stock reducido, diseño exclusivo.</p>
+        <span class="precio">$210.000</span>
         <button>Comprar ahora</button>
-      </article>
-    </div>
-  </section>
+      </div>
+    </article>
 
-  <!-- Sobre nosotros -->
-  <section id="sobre-nosotros">
+  </div>
+</section>
+
+<section id="sobre-nosotros" class="sobre-nosotros">
+  <div class="sobre-contenido">
     <h3>Sobre BrisaStyle</h3>
     <p>
-      BrisaStyle nace en el corazón del Quindío, uniendo tradición artesanal y diseño profesional
-      para crear sombreros que cuentan historias del Eje Cafetero.
+      BrisaStyle es una tienda online dedicada a ofrecer sombreros artesanales del Quindío,
+      seleccionados cuidadosamente de artesanos locales y talleres tradicionales de la región.
+      No fabricamos los sombreros: los elegimos, verificamos su calidad y los llevamos hasta ti
+      con una experiencia de compra confiable, cálida y profesional.
     </p>
-  </section>
 
-  <!-- Contacto -->
-  <section id="contacto">
-    <h3>Contacto</h3>
-    <p>¿Tienes dudas sobre tallas, envíos o pedidos especiales?</p>
-    <form>
-      <label>Nombre</label>
-      <input type="text" name="nombre">
+    <p>
+      Nuestro objetivo es conectar el talento artesanal del Eje Cafetero con personas de toda Colombia,
+      brindando piezas auténticas que representan cultura, tradición y estilo.
+    </p>
+  </div>
 
-      <label>Correo electrónico</label>
-      <input type="email" name="email">
+  <div class="sobre-img">
+    <img src="img/sobre-nosotros.jpg" alt="Artesanías del Quindío">
+  </div>
+</section>
 
-      <label>Mensaje</label>
-      <textarea name="mensaje"></textarea>
+<section id="contacto" class="contacto">
+  <h3>Contacto</h3>
+  <p>¿Tienes dudas sobre tallas, envíos o pedidos especiales? Estamos aquí para ayudarte.</p>
 
-      <button type="submit">Enviar mensaje</button>
-    </form>
-  </section>
+  <form class="form-contacto">
+    <label>Nombre</label>
+    <input type="text" name="nombre" placeholder="Tu nombre">
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 BrisaStyle - Sombreros del Quindío para toda Colombia</p>
-  </footer>
+    <label>Correo electrónico</label>
+    <input type="email" name="email" placeholder="tuemail@ejemplo.com">
+
+    <label>Mensaje</label>
+    <textarea name="mensaje" placeholder="Cuéntanos cómo podemos ayudarte"></textarea>
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="footer-contenido">
+    <h4>BrisaStyle</h4>
+    <p>Sombreros artesanales del Quindío para toda Colombia.</p>
+  </div>
+
+  <div class="footer-copy">
+    <p>© 2026 BrisaStyle. Todos los derechos reservados.</p>
+  </div>
+</footer>
 </body>
 </html>
